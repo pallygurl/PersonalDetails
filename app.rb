@@ -17,5 +17,20 @@ end
 post '/getage' do
 	age = params[:user_age]
 	name = params[:user_name]
-	"Wow #{name}! You're #{age}. You don't look a day over 14!"
+	redirect '/numbers?user_name=' + name + "&user_age=" + age
 end
+
+get '/numbers' do
+	age = params[:user_age]
+	name = params[:user_name]
+	erb :getnumbers, :locals => {:name => name, :age => age}
+end
+
+post '/getnumbers' do
+	age = params[:user_age]
+	name = params[:user_name]
+	number1 = params[:fav_1]
+	number2 = params[:fav_2]
+	number3 = params[:fav_3]
+end
+	
