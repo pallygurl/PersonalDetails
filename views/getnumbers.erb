@@ -1,11 +1,16 @@
-Tell me <%name%>, what are your 3 favorite numbers?
-
+Tell me <%=yourname%>, what are your 3 favorite numbers?
+<br>
+<br>
 <form method="post" action="getnumbers">
-	<input type="number" name="fav_1">
-	<input type="number" name="fav_2">
-	<input type="number" name="fav_3">
-	<input type="number" name="user_age" value = <%=age%> hidden>
-	<input type="text" name="user_name" value = <%=name%> hidden>
-	<input type="submit">	
+	<input type= "number" name= "fav_1">
+<br>
+	<input type= "number" name= "fav_2">
+<br>
+	<input type= "number" name= "fav_3">
+<br>
+	<input type= "text" name= "user_age" value = <%=age%> hidden>
+	<input type= "text" name= "user_name" value = <%=yourname%> hidden>
+<br>
+<br>
+	<input type= "submit">	
 </form>
-
