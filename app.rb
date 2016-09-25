@@ -32,8 +32,8 @@ post '/getnumbers' do
 	num1 = params[:fav_1]
 	num2 = params[:fav_2]
 	num3 = params[:fav_3]
-	sum = num1 + num2 + num3
+	sum = num1.to_i + num2.to_i + num3.to_i
 
 		
-"So your name is #{yourname}, your age is #{age}, and your 3 favorite numbers are #{num1}, #{num2}, and #{num3}."
+"So your name is #{yourname}, your age is #{age}, and your 3 favorite numbers are #{num1}, #{num2}, and #{num3}, which, when added together, equal #{sum}."
 end
